@@ -30,6 +30,13 @@ enum {
     BT_APP_SIG_WORK_DISPATCH = 0,
 };
 
+// Types d'événements de travail - AJOUT DE LA CORRECTION
+enum {
+    BT_APP_WORK_EVT_A2DP = 0,
+    BT_APP_WORK_EVT_AVRCP,
+    // Ajoutez d'autres types d'événements si nécessaire
+};
+
 BTBox3Component::BTBox3Component() 
     : bt_initialized(false), 
       bt_task_handle(nullptr),
